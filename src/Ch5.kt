@@ -1,6 +1,9 @@
 
 fun main(){
 
+    //6
+    val intList = listOf(1, 2, 3, 4)
+    println(sqsum(intList))
 }
 
 //2 JK
@@ -14,9 +17,7 @@ fun multpairs(){
 }
 
 //6 KM ************************
-fun sqsum(){
-
-}
+fun sqsum(intList: List<Int>) = intList.fold(0){ acc, i -> acc+i*i}
 
 //8 JK
 fun band(){
