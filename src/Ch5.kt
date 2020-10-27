@@ -6,7 +6,7 @@ fun main(){
     println(sqsum(intList))
 
     //10
-//    println(dupList(intList))
+    println(dupList(intList))
 
     //16
     val intSqrList = listOf(listOf(1, 3), listOf(4, 2), listOf(5, 9))
@@ -30,7 +30,7 @@ fun sqsum(intList: List<Int>) = intList.fold(0){ acc, i -> acc+i*i}
 fun band(){}
 
 //10 KM ************************
-//fun <T, R> dupList(list: List<T>) = list.fold(listOf(), { acc, it ->  acc+ listOf<T>(it, it)})
+fun <T> dupList(list: List<T>) = list.map { it }+list.map { it }
 
 //12 JK
 fun il2absrl(){}
