@@ -8,25 +8,22 @@ fun main(){
     val intSqrList = listOf(listOf(1, 3), listOf(4, 2), listOf(5, 9))
     println(maxpairs(intSqrList))
 
+    //18
+    println(min(intList))
+
 }
 
 //2 JK
-fun ordlist(){
-
-}
+fun ordlist(){}
 
 //4 JK
-fun multpairs(){
-
-}
+fun multpairs(){}
 
 //6 KM ************************
 fun sqsum(intList: List<Int>) = intList.fold(0){ acc, i -> acc+i*i}
 
 //8 JK
-fun band(){
-
-}
+fun band(){}
 
 //10 KM ************************
 fun dupList(){
@@ -34,39 +31,25 @@ fun dupList(){
 }
 
 //12 JK
-fun il2absrl(){
-
-}
+fun il2absrl(){}
 
 //14 KM ************************
 fun maxpairs(intSqrList: List<List<Int>>) = intSqrList.map { it.maxBy { i -> i } }
 
 //16 JK
-fun lconcat(){
-
-}
+fun lconcat(){}
 
 //18 KM ************************
-fun min(){
-
-}
+fun min(intList: List<Int>) = intList.minBy { it }
 
 //20 SJ
-fun append(){
-
-}
+fun append(){}
 
 //22 SJ
-fun evens(){
-
-}
+fun evens(){}
 
 //24 SJ
-fun mymap(){
-
-}
+fun mymap(){}
 
 //26 SJ
-fun mymap2(){
-
-}
+fun mymap2(){}
