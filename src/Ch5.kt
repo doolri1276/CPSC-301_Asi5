@@ -4,6 +4,10 @@ fun main(){
     //6
     val intList = listOf(1, 2, 3, 4)
     println(sqsum(intList))
+    //16
+    val intSqrList = listOf(listOf(1, 3), listOf(4, 2), listOf(5, 9))
+    println(maxpairs(intSqrList))
+
 }
 
 //2 JK
@@ -35,9 +39,7 @@ fun il2absrl(){
 }
 
 //14 KM ************************
-fun maxpairs(){
-
-}
+fun maxpairs(intSqrList: List<List<Int>>) = intSqrList.map { it.maxBy { i -> i } }
 
 //16 JK
 fun lconcat(){
