@@ -72,6 +72,8 @@ fun append(list1: List<Int>, list2: List<Int>):List<Int> = list1 + list2
 //22 SJ
 fun evens(input: List<Int>):List<Int> = input.filter { it % 2 == 0}
 
+//watch
+
 //24 SJ
 fun mymap(){}
 
