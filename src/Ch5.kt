@@ -1,4 +1,5 @@
 import kotlin.math.abs
+import kotlin.math.max
 
 fun main(){
 
@@ -27,8 +28,8 @@ fun main(){
     println(il2absrl(listOf(1,2,3,-4,5)))
 
     //14
-    val intSqrList = listOf(listOf(1, 3), listOf(4, 2), listOf(5, 9))
-    println(maxpairs(intSqrList))
+    val intSqrPairList = listOf(Pair(1, 3), Pair(4, 2), Pair(5, 9))
+    println(maxpairs(intSqrPairList))
 
     //16
     val listList = listOf(listOf(1,2), listOf(3,4,5,6), listOf(7))
@@ -58,7 +59,7 @@ fun <T> dupList(list: List<T>) = list.flatMap { listOf(it, it) }
 fun il2absrl(intList: List<Int>) = intList.map { abs(it).toDouble()}
 
 //14 KM ************************
-fun maxpairs(intSqrList: List<List<Int>>) = intSqrList.map { it.maxBy { i -> i } }
+fun maxpairs(intSqrList: List<Pair<Int, Int>>) = intSqrList.map { max(it.first, it.second) }
 
 //16 JK
 fun <T> lconcat(list: List<List<T>>) = list.flatMap { it }
