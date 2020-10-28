@@ -21,7 +21,7 @@ fun main(){
     println(band(boolList2))
 
     //10
-    println(dupList(intList))
+    println("10 : "+dupList(intList))
 
     //12
     println(il2absrl(listOf(1,2,3,-4,5)))
@@ -52,7 +52,7 @@ fun sqsum(intList: List<Int>) = intList.fold(0){ acc, i -> acc+i*i}
 fun band(boolList:List<Boolean>) = boolList.fold(true){acc: Boolean, i -> acc and i}
 
 //10 KM ************************
-fun <T> dupList(list: List<T>) = list.map { it }+list.map { it }
+fun <T> dupList(list: List<T>) = list.flatMap { listOf(it, it) }
 
 //12 JK
 fun il2absrl(intList: List<Int>) = intList.map { abs(it).toDouble()}
