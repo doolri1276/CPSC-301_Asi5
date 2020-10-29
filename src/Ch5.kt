@@ -74,8 +74,7 @@ fun append(list1: List<Int>, list2: List<Int>):List<Int> = list1 + list2
 fun evens(input: List<Int>):List<Int> = input.filter { it % 2 == 0}
 
 //24 SJ
-fun <T, R> mymap(list:List<T>, transform:(T)->R) = list.fold(listOf<R>()) {acc,t -> acc+transform(t)}
-//fun <T, R> Iterable<T>.mymap(transform:(T)->R) = for(item:T in this) (ArrayList<R>(if(this is Collection<*>) this.size else 10)).add(transform(item))
+fun <T, R> Iterable<T>.mymap(transform:(T)->R) = this.fold(listOf<R>()) {acc,t -> acc+transform(t)}
 
 //26 SJ
 fun mymap2(){}
